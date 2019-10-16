@@ -9,10 +9,13 @@ const minSubArrayLen = (arr, num) => {
   }
 
   while (i < arr.length - 1) {
-    //     console.log(i)
     if (total < num) {
-      j++;
-      total += arr[j];
+      if (j < arr.length - 1) {
+        j++;
+        total += arr[j];
+      } else {
+        return min === Infinity ? 0 : min;
+      }
     } else {
       min = Math.min(min, j - i + 1);
       total -= arr[i];
@@ -21,5 +24,3 @@ const minSubArrayLen = (arr, num) => {
   }
   return min;
 };
-
-minSubArrayLen([2, 3, 1, 2, 4, 3], 7);
