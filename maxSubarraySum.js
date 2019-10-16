@@ -18,3 +18,5 @@ const maxSubarraySum = (arr, num) => {
 };
 
 maxSubarraySum([1, 3, 5, 6, 3, 5, 7, 10, 2, 8, 9], 3);
+
+// Time complexity: O(N)
