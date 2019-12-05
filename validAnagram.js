@@ -23,4 +23,4 @@ const validAnagram = (word1, word2) => {
   return true;
 };
 
-// validAnagram('star', 'rats')
+validAnagram("star", "rats");
