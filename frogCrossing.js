@@ -27,4 +27,4 @@ function trackerChecker(tracker) {
   return true;
 }
 
-frogCrossing([1, 2, 4, 7, 6, 3, 2, 2, 5, 4, 5, 11], 5);
+// frogCrossing([1, 2, 4, 7, 6, 3, 2, 2, 5, 4, 5, 11], 5)
