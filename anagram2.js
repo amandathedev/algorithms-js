@@ -15,11 +15,10 @@ const anagramCheck = (word1, word2) => {
     for (let key in counter) {
       if (counter[key] !== 0) {
         return false;
-      } else {
-        return true;
       }
     }
   }
+  return true;
 };
 
 anagramCheck("whale", "while");
