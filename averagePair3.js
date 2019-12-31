@@ -1,0 +1,1 @@
+const averagePair = (arr, num) => {};
