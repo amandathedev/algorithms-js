@@ -100,3 +100,20 @@ function happyNumber3(num) {
 }
 
 // happyNumber3(19)
+
+let seen = {};
+var isHappy = function(n) {
+  if (n === 1) return true;
+  if (seen[n]) return false;
+
+  let arr = n.toString().split("");
+  let total = 0;
+  for (let i = 0; i < arr.length; i++) {
+    total += parseInt(arr[i]) * arr[i];
+  }
+
+  seen[n] = true;
+  return isHappy(total);
+};
+
+isHappy(142);
