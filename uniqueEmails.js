@@ -30,3 +30,22 @@ uniqueEmails([
   "hello@gmail.com",
   "he.llo@gmail.com"
 ]);
+
+// better solution
+// wow
+var numUniqueEmails = function(emails) {
+  return new Set(
+    emails.map(email => {
+      const [local, domain] = email.split("@");
+      return (
+        local
+          .split("+")
+          .shift()
+          .split(".")
+          .join("") +
+        "@" +
+        domain
+      );
+    })
+  ).size;
+};
