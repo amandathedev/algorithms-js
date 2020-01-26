@@ -1,4 +1,4 @@
-const ransomeNote = (note, magazine) => {
+const ransomNote = (note, magazine) => {
   let words = note
     .split(" ")
     .join("")
@@ -20,4 +20,4 @@ const ransomeNote = (note, magazine) => {
   return true;
 };
 
-ransomeNote("watch out", "obcqrljwtrokashzuyt");
+ransomNote("watch out", "obcqrljwtrokashzuyt");
