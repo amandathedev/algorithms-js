@@ -6,6 +6,7 @@ const postfixCalculator = input => {
     if (!operands.includes(char)) {
       numbersArr.push(char);
     }
+    // else if (input.pop())
   }
   return numbersArr;
 };
