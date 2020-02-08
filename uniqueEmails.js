@@ -31,7 +31,6 @@ uniqueEmails([
   "he.llo@gmail.com"
 ]);
 
-// better solution
 // wow
 var numUniqueEmails = function(emails) {
   return new Set(
