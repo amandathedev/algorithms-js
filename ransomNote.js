@@ -20,4 +20,4 @@ const ransomNote = (note, magazine) => {
   return true;
 };
 
-ransomNote("watch out", "obcqrljwtrokashzuyt");
+// ransomNote("watch out", "obcqrljwtrokashzuyt");
