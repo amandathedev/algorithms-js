@@ -75,4 +75,4 @@ const morseConvert = text => {
   return answer;
 };
 
-morseConvert("Hello my name is Amanda");
+morseConvert("hello world");
